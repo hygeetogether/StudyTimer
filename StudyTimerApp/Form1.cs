@@ -12,8 +12,6 @@ namespace StudyTimerApp
         public Form1()
         {
             InitializeComponent();
-            // MouseDoubleClick 이벤트 핸들러 추가
-            this.lvTasks.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lvTasks_MouseDoubleClick);
         }
 
         /// <summary>
