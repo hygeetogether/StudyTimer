@@ -61,18 +61,21 @@ namespace StudyTimerApp
             this.gbInput.Controls.Add(this.lblMinutes);
             this.gbInput.Controls.Add(this.txtTaskName);
             this.gbInput.Controls.Add(this.lblTask);
-            this.gbInput.Location = new System.Drawing.Point(12, 12);
+            this.gbInput.Location = new System.Drawing.Point(17, 18);
+            this.gbInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gbInput.Name = "gbInput";
-            this.gbInput.Size = new System.Drawing.Size(560, 60);
+            this.gbInput.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbInput.Size = new System.Drawing.Size(800, 90);
             this.gbInput.TabIndex = 0;
             this.gbInput.TabStop = false;
             this.gbInput.Text = "새 작업 추가";
             // 
             // btnAddTask
             // 
-            this.btnAddTask.Location = new System.Drawing.Point(470, 23);
+            this.btnAddTask.Location = new System.Drawing.Point(671, 34);
+            this.btnAddTask.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAddTask.Name = "btnAddTask";
-            this.btnAddTask.Size = new System.Drawing.Size(75, 23);
+            this.btnAddTask.Size = new System.Drawing.Size(107, 34);
             this.btnAddTask.TabIndex = 4;
             this.btnAddTask.Text = "추가";
             this.btnAddTask.UseVisualStyleBackColor = true;
@@ -80,7 +83,8 @@ namespace StudyTimerApp
             // 
             // numMinutes
             // 
-            this.numMinutes.Location = new System.Drawing.Point(340, 25);
+            this.numMinutes.Location = new System.Drawing.Point(486, 38);
+            this.numMinutes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numMinutes.Maximum = new decimal(new int[] {
             180,
             0,
@@ -92,7 +96,7 @@ namespace StudyTimerApp
             0,
             0});
             this.numMinutes.Name = "numMinutes";
-            this.numMinutes.Size = new System.Drawing.Size(120, 21);
+            this.numMinutes.Size = new System.Drawing.Size(171, 28);
             this.numMinutes.TabIndex = 3;
             this.numMinutes.Value = new decimal(new int[] {
             25,
@@ -103,25 +107,28 @@ namespace StudyTimerApp
             // lblMinutes
             // 
             this.lblMinutes.AutoSize = true;
-            this.lblMinutes.Location = new System.Drawing.Point(275, 28);
+            this.lblMinutes.Location = new System.Drawing.Point(393, 42);
+            this.lblMinutes.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMinutes.Name = "lblMinutes";
-            this.lblMinutes.Size = new System.Drawing.Size(57, 12);
+            this.lblMinutes.Size = new System.Drawing.Size(86, 18);
             this.lblMinutes.TabIndex = 2;
             this.lblMinutes.Text = "시간 (분):";
             // 
             // txtTaskName
             // 
-            this.txtTaskName.Location = new System.Drawing.Point(60, 25);
+            this.txtTaskName.Location = new System.Drawing.Point(86, 38);
+            this.txtTaskName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTaskName.Name = "txtTaskName";
-            this.txtTaskName.Size = new System.Drawing.Size(200, 21);
+            this.txtTaskName.Size = new System.Drawing.Size(284, 28);
             this.txtTaskName.TabIndex = 1;
             // 
             // lblTask
             // 
             this.lblTask.AutoSize = true;
-            this.lblTask.Location = new System.Drawing.Point(15, 28);
+            this.lblTask.Location = new System.Drawing.Point(21, 42);
+            this.lblTask.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTask.Name = "lblTask";
-            this.lblTask.Size = new System.Drawing.Size(37, 12);
+            this.lblTask.Size = new System.Drawing.Size(56, 18);
             this.lblTask.TabIndex = 0;
             this.lblTask.Text = "할 일:";
             // 
@@ -129,18 +136,21 @@ namespace StudyTimerApp
             // 
             this.gbTaskList.Controls.Add(this.btnDeleteTask);
             this.gbTaskList.Controls.Add(this.lvTasks);
-            this.gbTaskList.Location = new System.Drawing.Point(12, 78);
+            this.gbTaskList.Location = new System.Drawing.Point(17, 117);
+            this.gbTaskList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gbTaskList.Name = "gbTaskList";
-            this.gbTaskList.Size = new System.Drawing.Size(370, 270);
+            this.gbTaskList.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbTaskList.Size = new System.Drawing.Size(529, 405);
             this.gbTaskList.TabIndex = 1;
             this.gbTaskList.TabStop = false;
             this.gbTaskList.Text = "작업 목록";
             // 
             // btnDeleteTask
             // 
-            this.btnDeleteTask.Location = new System.Drawing.Point(280, 235);
+            this.btnDeleteTask.Location = new System.Drawing.Point(400, 352);
+            this.btnDeleteTask.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDeleteTask.Name = "btnDeleteTask";
-            this.btnDeleteTask.Size = new System.Drawing.Size(75, 23);
+            this.btnDeleteTask.Size = new System.Drawing.Size(107, 34);
             this.btnDeleteTask.TabIndex = 1;
             this.btnDeleteTask.Text = "선택 삭제";
             this.btnDeleteTask.UseVisualStyleBackColor = true;
@@ -155,9 +165,10 @@ namespace StudyTimerApp
             this.lvTasks.FullRowSelect = true;
             this.lvTasks.GridLines = true;
             this.lvTasks.HideSelection = false;
-            this.lvTasks.Location = new System.Drawing.Point(15, 20);
+            this.lvTasks.Location = new System.Drawing.Point(21, 30);
+            this.lvTasks.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lvTasks.Name = "lvTasks";
-            this.lvTasks.Size = new System.Drawing.Size(340, 210);
+            this.lvTasks.Size = new System.Drawing.Size(484, 313);
             this.lvTasks.TabIndex = 0;
             this.lvTasks.UseCompatibleStateImageBehavior = false;
             this.lvTasks.View = System.Windows.Forms.View.Details;
@@ -187,18 +198,21 @@ namespace StudyTimerApp
             this.gbTimer.Controls.Add(this.pbProgress);
             this.gbTimer.Controls.Add(this.lblTimerDisplay);
             this.gbTimer.Controls.Add(this.lblSelectedTask);
-            this.gbTimer.Location = new System.Drawing.Point(388, 78);
+            this.gbTimer.Location = new System.Drawing.Point(554, 117);
+            this.gbTimer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gbTimer.Name = "gbTimer";
-            this.gbTimer.Size = new System.Drawing.Size(184, 270);
+            this.gbTimer.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbTimer.Size = new System.Drawing.Size(263, 405);
             this.gbTimer.TabIndex = 2;
             this.gbTimer.TabStop = false;
             this.gbTimer.Text = "타이머";
             // 
             // btnStop
             // 
-            this.btnStop.Location = new System.Drawing.Point(97, 235);
+            this.btnStop.Location = new System.Drawing.Point(139, 352);
+            this.btnStop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnStop.Name = "btnStop";
-            this.btnStop.Size = new System.Drawing.Size(75, 23);
+            this.btnStop.Size = new System.Drawing.Size(107, 34);
             this.btnStop.TabIndex = 4;
             this.btnStop.Text = "정지";
             this.btnStop.UseVisualStyleBackColor = true;
@@ -206,9 +220,10 @@ namespace StudyTimerApp
             // 
             // btnStartPause
             // 
-            this.btnStartPause.Location = new System.Drawing.Point(16, 235);
+            this.btnStartPause.Location = new System.Drawing.Point(23, 352);
+            this.btnStartPause.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnStartPause.Name = "btnStartPause";
-            this.btnStartPause.Size = new System.Drawing.Size(75, 23);
+            this.btnStartPause.Size = new System.Drawing.Size(107, 34);
             this.btnStartPause.TabIndex = 3;
             this.btnStartPause.Text = "시작";
             this.btnStartPause.UseVisualStyleBackColor = true;
@@ -216,18 +231,20 @@ namespace StudyTimerApp
             // 
             // pbProgress
             // 
-            this.pbProgress.Location = new System.Drawing.Point(16, 197);
+            this.pbProgress.Location = new System.Drawing.Point(23, 296);
+            this.pbProgress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pbProgress.Name = "pbProgress";
-            this.pbProgress.Size = new System.Drawing.Size(156, 23);
+            this.pbProgress.Size = new System.Drawing.Size(223, 34);
             this.pbProgress.Step = 1;
             this.pbProgress.TabIndex = 2;
             // 
             // lblTimerDisplay
             // 
             this.lblTimerDisplay.Font = new System.Drawing.Font("굴림", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblTimerDisplay.Location = new System.Drawing.Point(6, 100);
+            this.lblTimerDisplay.Location = new System.Drawing.Point(9, 150);
+            this.lblTimerDisplay.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTimerDisplay.Name = "lblTimerDisplay";
-            this.lblTimerDisplay.Size = new System.Drawing.Size(172, 37);
+            this.lblTimerDisplay.Size = new System.Drawing.Size(246, 56);
             this.lblTimerDisplay.TabIndex = 1;
             this.lblTimerDisplay.Text = "00:00";
             this.lblTimerDisplay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -235,9 +252,10 @@ namespace StudyTimerApp
             // lblSelectedTask
             // 
             this.lblSelectedTask.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblSelectedTask.Location = new System.Drawing.Point(6, 30);
+            this.lblSelectedTask.Location = new System.Drawing.Point(9, 45);
+            this.lblSelectedTask.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSelectedTask.Name = "lblSelectedTask";
-            this.lblSelectedTask.Size = new System.Drawing.Size(172, 23);
+            this.lblSelectedTask.Size = new System.Drawing.Size(246, 34);
             this.lblSelectedTask.TabIndex = 0;
             this.lblSelectedTask.Text = "선택된 작업: -";
             this.lblSelectedTask.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -249,14 +267,16 @@ namespace StudyTimerApp
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 361);
+            this.ClientSize = new System.Drawing.Size(834, 542);
             this.Controls.Add(this.gbTimer);
             this.Controls.Add(this.gbTaskList);
             this.Controls.Add(this.gbInput);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "스터디 + 할 일 관리 타이머";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.gbInput.ResumeLayout(false);
             this.gbInput.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numMinutes)).EndInit();
